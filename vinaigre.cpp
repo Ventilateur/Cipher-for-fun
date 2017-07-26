@@ -16,8 +16,6 @@ string encode(string plain, string key)
 
 int main()
 {
-    // This is the famous Vigenere cipher method!!!
-    
     cout << "0xAbCd" << endl;                   // This the key
     cout << "do5T7O%_BQ4Zy_5J:I|_5dEf" << endl; // Now find the plain text of this
 }
