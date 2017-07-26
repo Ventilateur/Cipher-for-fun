@@ -1,17 +1,14 @@
 #include <iostream>
 
 #define ui unsigned int
+#define s  string
+#define l  length
 
 using namespace std;
 
-string encode(string plain, string key)
+s encode(s p, s k)
 {
-    string cipher = "";
-    for (ui i = 0; i < plain.length(); i++)
-    {
-        cipher += (plain[i]+key[i%key.length()]+0x13E)%'_'+~-(1<<5);
-    }
-    return cipher;
+    return [&p,k]()->s{for(ui i=0;i<p.l();i++)p[i]=(p[i]+k[i%k.l()]+0x13E)%'_'+~-(1<<5);return p;}();
 }
 
 int main()
