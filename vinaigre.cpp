@@ -13,6 +13,6 @@ s encode(s p, s k)
 
 int main()
 {
-    cout << "0xAbCd" << endl;                   // This the key
-    cout << "do5T7O%_BQ4Zy_5J:I|_5dEf" << endl; // Now find the plain text of this
+    cout << "0xVHPhan" << endl;                               // This the key
+    cout << "TiF1DKWe}[L3AXcojiMI5\\DS|_<I?cbS!^=J" << endl;  // Now find the plain text of this
 }
