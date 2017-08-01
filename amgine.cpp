@@ -21,8 +21,7 @@ void roll(int i=1)
 
 s encode(s p, int j=0)
 {
-    if (!j)set();
-    if (j == p.length()) return p;roll();
+    if(!j)set();if(j==p.length())return p;roll();
     return encode([&p,j]()->s{for(int i=0;i<(l<<1)-3;i++)p[j]=(i<~-l?e[-~i]:e[0])[(i<~-l?e[0]:e[l-i+2]).find(p[j])];
     return p;}(),-~j);
 }
