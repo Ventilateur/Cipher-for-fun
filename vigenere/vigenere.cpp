@@ -8,7 +8,7 @@ using namespace std;
 
 s encode(s p, s k)
 {
-    return [&p,k]()->s{for(ui i=0;i<p.l();i++)p[i]=(p[i]+k[i%k.l()]+0x13E)%'_'+~-(1<<5);return p;}();
+    return [&p,k]()->s{for(ui i=0;p[i];i++)p[i]=(p[i]+k[i%k.l()]+0x13E)%'_'+~-(1<<5);return p;}();
 }
 
 int main()
