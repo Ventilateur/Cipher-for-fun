@@ -19,6 +19,9 @@ s decode(s p, s k)
 
 int main()
 {
-    cout << "0xVHPhan" << endl;                               // This the key
-    cout << "TiF1DKWe}[L3AXcojiMI5\\DS|_<I?cbS!^=J" << endl;  // Now find the plain text of this
+    string p = "Well hello there little coder ~~~!!!";
+    string k = "A_Key";
+    string e = encode(p, k);
+    cout << e << endl;
+    cout << decode(e, k) << endl;
 }
