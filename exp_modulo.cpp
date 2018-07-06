@@ -2,6 +2,7 @@
 #include <iostream>
 
 #define UNCHANGED 1
+#define long long ll
 
 using namespace std;
 
@@ -9,9 +10,9 @@ using namespace std;
 // This function calculate ((b^e) mod m) in an efficient (not the best, cuz it's kinda short) way, also works with big value of e
 //
 
-int expMod(int x, int b, int e, int m)
+ll expMod(ll x, ll b, ll e, ll m)
 {
-    return (!e)?x:expMod((e&1)?(x*b)%m:x,(b*b)%m,e>>1,m);
+    return !e?x:expMod(e&1?(x*b)%m:x,(b*b)%m,e>>1,m);
 }
 
 int main() 
