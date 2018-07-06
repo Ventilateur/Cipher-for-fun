@@ -2,7 +2,7 @@
 #include <iostream>
 
 #define UNCHANGED 1
-#define long long ll
+#define ll long long
 
 using namespace std;
 
